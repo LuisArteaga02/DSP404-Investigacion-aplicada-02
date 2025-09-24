@@ -3,44 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Yugoa\\OneDrive\\Documentos\\DSP404-Investigacion-aplicada-02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\views\\biblioteca\\buscar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|solutionrelative:views\\biblioteca\\buscar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\controllers\\bibliotecacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|solutionrelative:controllers\\bibliotecacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\views\\biblioteca\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|solutionrelative:views\\biblioteca\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\views\\biblioteca\\buscar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|solutionrelative:views\\biblioteca\\buscar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\models\\revista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|solutionrelative:models\\revista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\views\\biblioteca\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|solutionrelative:views\\biblioteca\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|solutionrelative:models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\models\\materialbiblioteca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|solutionrelative:models\\materialbiblioteca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\controllers\\bibliotecacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|solutionrelative:controllers\\bibliotecacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\models\\revista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|solutionrelative:models\\revista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|solutionrelative:models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|DesafioPractico02.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|c:\\users\\yugoa\\onedrive\\documentos\\dsp404-investigacion-aplicada-02\\models\\materialbiblioteca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84EA29E8-2865-4C9D-8C99-ABB248068152}|InvestigacionAplicada02.csproj|solutionrelative:models\\materialbiblioteca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Yugoa\\OneDrive\\Documentos\\DSP404-Investigacion-aplicada-02\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -74,8 +74,7 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T04:10:40.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T04:10:40.706Z"
             },
             {
               "$type": "Document",
@@ -85,14 +84,14 @@
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Yugoa\\OneDrive\\Documentos\\DSP404-Investigacion-aplicada-02\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-24T04:09:49.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\Yugoa\\OneDrive\\Documentos\\DSP404-Investigacion-aplicada-02\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -100,12 +99,11 @@
               "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T04:09:38.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T04:09:38.104Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Buscar.cshtml",
               "DocumentMoniker": "C:\\Users\\Yugoa\\OneDrive\\Documentos\\DSP404-Investigacion-aplicada-02\\Views\\Biblioteca\\Buscar.cshtml",
               "RelativeDocumentMoniker": "Views\\Biblioteca\\Buscar.cshtml",
@@ -113,12 +111,11 @@
               "RelativeToolTip": "Views\\Biblioteca\\Buscar.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T04:09:03.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T04:09:03.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Yugoa\\OneDrive\\Documentos\\DSP404-Investigacion-aplicada-02\\Views\\Biblioteca\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Biblioteca\\Index.cshtml",
@@ -126,12 +123,11 @@
               "RelativeToolTip": "Views\\Biblioteca\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T04:09:03.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T04:09:03.588Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Yugoa\\OneDrive\\Documentos\\DSP404-Investigacion-aplicada-02\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -139,12 +135,11 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T04:09:03.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T04:09:03.592Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "BibliotecaController.cs",
               "DocumentMoniker": "C:\\Users\\Yugoa\\OneDrive\\Documentos\\DSP404-Investigacion-aplicada-02\\Controllers\\BibliotecaController.cs",
               "RelativeDocumentMoniker": "Controllers\\BibliotecaController.cs",
@@ -152,12 +147,11 @@
               "RelativeToolTip": "Controllers\\BibliotecaController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T04:09:03.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T04:09:03.594Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "revista.cs",
               "DocumentMoniker": "C:\\Users\\Yugoa\\OneDrive\\Documentos\\DSP404-Investigacion-aplicada-02\\Models\\revista.cs",
               "RelativeDocumentMoniker": "Models\\revista.cs",
@@ -165,12 +159,11 @@
               "RelativeToolTip": "Models\\revista.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T04:09:03.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T04:09:03.596Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Libro.cs",
               "DocumentMoniker": "C:\\Users\\Yugoa\\OneDrive\\Documentos\\DSP404-Investigacion-aplicada-02\\Models\\Libro.cs",
               "RelativeDocumentMoniker": "Models\\Libro.cs",
@@ -178,12 +171,11 @@
               "RelativeToolTip": "Models\\Libro.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T04:09:03.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T04:09:03.596Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "MaterialBiblioteca.cs",
               "DocumentMoniker": "C:\\Users\\Yugoa\\OneDrive\\Documentos\\DSP404-Investigacion-aplicada-02\\Models\\MaterialBiblioteca.cs",
               "RelativeDocumentMoniker": "Models\\MaterialBiblioteca.cs",
@@ -191,8 +183,7 @@
               "RelativeToolTip": "Models\\MaterialBiblioteca.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T04:09:03.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T04:09:03.596Z"
             }
           ]
         }
