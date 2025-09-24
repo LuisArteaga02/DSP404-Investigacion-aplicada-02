@@ -1,0 +1,12 @@
+﻿@model List<string>
+
+    <h2>Materiales de biblioteca</h2>
+
+    <ul>
+        @foreach (var info in Model)
+    {
+            <li class="list-group-item">@info</li>
+    }
+</ul>
+
+<a href="/Biblioteca/Buscar">Buscar un material por codigo</a>
