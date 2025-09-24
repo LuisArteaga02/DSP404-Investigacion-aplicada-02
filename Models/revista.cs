@@ -1,9 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace DesafioPractico02.Models
+using System.ComponentModel.DataAnnotations.Schema;
+namespace InvestigacionAplicada02.Models
     
 {
     public class revista:MaterialBiblioteca
     {
+        [Key] 
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "La edición es requerida")]
         [StringLength(50)]

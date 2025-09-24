@@ -1,9 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DesafioPractico02.Models
+namespace InvestigacionAplicada02.Models
 {
     public class Libro : MaterialBiblioteca
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+
         [Required(ErrorMessage = "El número de páginas es requerido")]
         [Range(1, 10000, ErrorMessage = "El número de páginas debe ser mayor a 0")]
         [Display(Name = "Número de Páginas")]

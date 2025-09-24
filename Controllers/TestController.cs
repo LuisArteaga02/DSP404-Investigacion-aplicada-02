@@ -13,45 +13,45 @@ namespace InvestigacionAplicada02.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Conexion()
+        public async Task<IActionResult> Index()
         {
-            var viewModel = new TestConexionViewModel();
-
             try
             {
-                // Test de conexión básica
-                viewModel.ConexionExitosa = await _context.CanConnectAsync();
+                ViewBag.Servidor = _context.Database.GetDbConnection().DataSource;
+                ViewBag.BaseDatos = _context.Database.GetDbConnection().Database;
 
-                if (viewModel.ConexionExitosa)
+                var canConnect = await _context.Database.CanConnectAsync();
+
+                if (canConnect)
                 {
-                    // Test de consulta simple
-                    var countUsuarios = await _context.Usuarios.CountAsync();
-                    var countLibros = await _context.libros.CountAsync();
-                    var countRevistas = await _context.revistas.CountAsync();
+                    // Intentar contar registros para verificar tablas
+                    try
+                    {
+                        var usuariosCount = await _context.Usuarios.CountAsync();
+                        var librosCount = await _context.Libros.CountAsync();
 
-                    viewModel.Mensaje = $"✅ Conexión exitosa a Azure SQL Database";
-                    viewModel.Detalles = $"Usuarios: {countUsuarios} | Libros: {countLibros} | Revistas: {countRevistas}";
+                        ViewBag.Mensaje = "✅ CONEXIÓN EXITOSA a Azure SQL Database";
+                        ViewBag.Detalles = $"Tablas cargadas correctamente - Usuarios: {usuariosCount}, Libros: {librosCount}";
+                    }
+                    catch (Exception tableEx)
+                    {
+                        ViewBag.Mensaje = "⚠️ Conexión exitosa pero las tablas necesitan ser creadas";
+                        ViewBag.Detalles = "Ejecuta la migración para crear las tablas";
+                    }
                 }
                 else
                 {
-                    viewModel.Mensaje = "❌ No se pudo conectar a la base de datos";
+                    ViewBag.Mensaje = "❌ ERROR de conexión a Azure SQL Database";
+                    ViewBag.Detalles = "Verifica firewall, credenciales y que el servidor esté activo";
                 }
             }
             catch (Exception ex)
             {
-                viewModel.ConexionExitosa = false;
-                viewModel.Mensaje = $"❌ Error: {ex.Message}";
-                viewModel.Detalles = ex.StackTrace;
+                ViewBag.Mensaje = "💥 ERROR grave de conexión";
+                ViewBag.Detalles = ex.Message;
             }
 
-            return View(viewModel);
+            return View();
         }
-    }
-
-    public class TestConexionViewModel
-    {
-        public bool ConexionExitosa { get; set; }
-        public string Mensaje { get; set; }
-        public string Detalles { get; set; }
     }
 }

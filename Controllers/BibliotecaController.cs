@@ -1,41 +1,55 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using InvestigacionAplicada02.Models;
+using InvestigacionAplicada02.Services;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Concurrent;
 using System.Linq;
-using DesafioPractico02.Models;
-namespace DesafioPractico02.Controllers
+namespace InvestigacionAplicada02.Controllers
 {
     public class BibliotecaController : Controller
     {
-        private static List<MaterialBiblioteca> materiales = new List<MaterialBiblioteca>
+        private readonly BibliotecaService _servicio;
+
+        public BibliotecaController(BibliotecaService servicio)
         {
-            new Libro("Cien años de soledad","Gabriel Garcia Marquez","L001", 471),
-            new revista("National Geografic","varios","R001","agostro 2025"),
-            new Libro("Don Quijote", "Miguel de Cervantes", "L002", 863),
-            new revista("Science", "AAAS", "R002", "Septiembre 2025"),
-            new Libro("El Principito", "Antoine de Saint-Exupéry", "L003", 96)
-        };
-        public IActionResult Index()
-        {
-            var lista = materiales.Select(m => m.MonstrarInformacion()).ToList();
-            return View(lista);
+            _servicio = servicio;
         }
-        public IActionResult Buscar()
+
+        public async Task<IActionResult> Index()
+        {
+            var materiales = await _servicio.ObtenerTodosMateriales();
+            return View(materiales);
+        }
+
+        public IActionResult CrearLibro()
         {
             return View();
         }
+
         [HttpPost]
-        public IActionResult Buscar(string codigo)
+        public async Task<IActionResult> CrearLibro(Libro libro)
         {
-            var material = materiales.FirstOrDefault(m => m.Codigo.Equals(codigo, StringComparison.OrdinalIgnoreCase));
-            if (material != null)
+            if (ModelState.IsValid)
             {
-                ViewBag.Resultado = material.MonstrarInformacion();
+                await _servicio.AgregarLibro(libro);
+                return RedirectToAction("Index");
             }
-            else
-            {
-                ViewBag.Resultado = $"No se encontro ningun material con el codigo '{codigo}'";
-            }
+            return View(libro);
+        }
+
+        public IActionResult CrearRevista()
+        {
             return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CrearRevista(revista revista)
+        {
+            if (ModelState.IsValid)
+            {
+                await _servicio.AgregarRevista(revista);
+                return RedirectToAction("Index");
+            }
+            return View(revista);
         }
     }
 }

@@ -1,8 +1,8 @@
-﻿using DesafioPractico02.Models;
+﻿using InvestigacionAplicada02.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace DesafioPractico02.Controllers
+namespace InvestigacionAplicada02.Controllers
 {
     public class HomeController : Controller
     {

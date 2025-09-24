@@ -1,6 +1,6 @@
 
 
-namespace DesafioPractico02.Models
+namespace InvestigacionAplicada02.Models
 {
     public class ErrorViewModel
     {

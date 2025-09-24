@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-namespace DesafioPractico02.Models
+namespace InvestigacionAplicada02.Models
 {
     public abstract class MaterialBiblioteca
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IdMaterial { get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "El título es requerido")]
         [StringLength(200)]

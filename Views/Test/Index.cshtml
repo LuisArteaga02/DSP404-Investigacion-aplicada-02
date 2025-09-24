@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Test de Conexión Azure SQL";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="text-center mb-4">🔗 Test de Conexión Azure SQL Database</h2>
+
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Información de Conexión</h5>
+                </div>
+                <div class="card-body">
+                    <!-- Mensaje principal -->
+                    @if (ViewBag.Mensaje != null)
+                    {
+                        if (ViewBag.Mensaje.Contains("✅") || ViewBag.Mensaje.Contains("EXITOSA"))
+                        {
+                            <div class="alert alert-success">
+                                <h4>@ViewBag.Mensaje</h4>
+                            </div>
+                        }
+                        else if (ViewBag.Mensaje.Contains("❌") || ViewBag.Mensaje.Contains("ERROR"))
+                        {
+                            <div class="alert alert-danger">
+                                <h4>@ViewBag.Mensaje</h4>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="alert alert-warning">
+                                <h4>@ViewBag.Mensaje</h4>
+                            </div>
+                        }
+                    }
+
+                    <!-- Detalles -->
+                    @if (ViewBag.Detalles != null)
+                    {
+                        <div class="mb-3">
+                            <strong>Detalles:</strong>
+                            <span class="text-muted">@ViewBag.Detalles</span>
+                        </div>
+                    }
+
+                    <!-- Información del servidor -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>Servidor Azure:</strong>
+                            <br>
+                            <code>@(ViewBag.Servidor ?? "No disponible")</code>
+                        </div>
+                        <div class="col-md-6">
+                            <strong>Base de datos:</strong>
+                            <br>
+                            <code>@(ViewBag.BaseDatos ?? "No disponible")</code>
+                        </div>
+                    </div>
+
+                    <!-- Estadísticas si están disponibles -->
+                    @if (ViewBag.Usuarios != null || ViewBag.Libros != null || ViewBag.Revistas != null)
+                    {
+                        <hr>
+                        <h6>Estadísticas de la Base de Datos:</h6>
+                        <div class="row">
+                            @if (ViewBag.Usuarios != null)
+                            {
+                                <div class="col-md-4">
+                                    <span class="badge bg-info">@ViewBag.Usuarios</span>
+                                </div>
+                            }
+                            @if (ViewBag.Libros != null)
+                            {
+                                <div class="col-md-4">
+                                    <span class="badge bg-success">@ViewBag.Libros</span>
+                                </div>
+                            }
+                            @if (ViewBag.Revistas != null)
+                            {
+                                <div class="col-md-4">
+                                    <span class="badge bg-warning">@ViewBag.Revistas</span>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="text-center mt-4">
+                <a href="@Url.Action("Index", "Home")" class="btn btn-primary">
+                    🏠 Volver al Inicio
+                </a>
+                <a href="@Url.Action("Index", "Biblioteca")" class="btn btn-success">
+                    📚 Ir a Biblioteca
+                </a>
+                <a href="@Url.Action("Login", "Auth")" class="btn btn-info">
+                    🔐 Iniciar Sesión
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,12 +1,58 @@
-﻿@model List<string>
+﻿@model IEnumerable<dynamic> 
 
-    <h2>Materiales de biblioteca</h2>
+@{
+    ViewData["Title"] = "Biblioteca - Materiales";
+}
 
-    <ul>
-        @foreach (var info in Model)
-    {
-            <li class="list-group-item">@info</li>
-    }
-</ul>
+<h2>Materiales de la Biblioteca</h2>
 
-<a href="/Biblioteca/Buscar">Buscar un material por codigo</a>
+<div class="mb-3">
+    <a asp-action="CrearLibro" class="btn btn-primary">Crear Nuevo Libro</a>
+    <a asp-action="CrearRevista" class="btn btn-success">Crear Nueva Revista</a>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Tipo</th>
+            <th>Autor/Editorial</th>
+    
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var material in Model)
+        {
+            <tr>
+                <td>@material.Titulo</td>
+                <td>
+                    @if (material.GetType().Name == "Libro")
+                    {
+                        <span class="badge bg-primary">Libro</span>
+                    }
+                    else if (material.GetType().Name == "Revista")
+                    {
+                        <span class="badge bg-success">Revista</span>
+                    }
+                </td>
+                <td>
+                    @if (material.GetType().Name == "Libro")
+                    {
+                        @material.Autor
+                    }
+                    else if (material.GetType().Name == "Revista")
+                    {
+                        @material.Editorial
+                    }
+                </td>
+                
+                <td>
+                    <a href="#" class="btn btn-sm btn-info">Detalles</a>
+                    <a href="#" class="btn btn-sm btn-warning">Editar</a>
+                    <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,4 +1,4 @@
-﻿using DesafioPractico02.Models;
+﻿using InvestigacionAplicada02.Models;
 
 using InvestigacionAplicada02.Data;
 using InvestigacionAplicada02.Models;
