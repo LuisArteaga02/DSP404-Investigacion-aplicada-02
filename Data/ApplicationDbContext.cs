@@ -73,15 +73,28 @@ namespace InvestigacionAplicada02.Data
                     .IsRequired()
                     .HasMaxLength(100);
 
-                entity.Property(u => u.FechaRegistro);
+                entity.Property(u => u.FechaRegistro)
+                    .HasDefaultValueSql("GETDATE()");
 
-                // Índice único para email
+
                 entity.HasIndex(u => u.Email)
                     .IsUnique();
             });
 
+
+        }
+        public async Task<bool> CanConnectAsync()
+        {
+            try
+            {
+                return await Database.CanConnectAsync();
+            }
+            catch
+            {
+                return false;
+            }
         }
 
 
-    }
+        }
 }
