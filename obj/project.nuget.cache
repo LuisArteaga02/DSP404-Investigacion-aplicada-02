@@ -1,13 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "jZo4JYGai4I=",
+  "dgSpecHash": "2ZOi9R7723g=",
   "success": true,
   "projectFilePath": "C:\\Users\\Yugoa\\OneDrive\\Documentos\\DSP404-Investigacion-aplicada-02\\InvestigacionAplicada02.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
+    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.9\\microsoft.entityframeworkcore.9.0.9.nupkg.sha512",
+    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.9\\microsoft.entityframeworkcore.abstractions.9.0.9.nupkg.sha512",
+    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.9\\microsoft.entityframeworkcore.analyzers.9.0.9.nupkg.sha512",
+    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.9\\microsoft.extensions.caching.abstractions.9.0.9.nupkg.sha512",
+    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.9\\microsoft.extensions.caching.memory.9.0.9.nupkg.sha512",
+    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.9\\microsoft.extensions.dependencyinjection.9.0.9.nupkg.sha512",
+    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.9\\microsoft.extensions.dependencyinjection.abstractions.9.0.9.nupkg.sha512",
+    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.extensions.logging\\9.0.9\\microsoft.extensions.logging.9.0.9.nupkg.sha512",
+    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.9\\microsoft.extensions.logging.abstractions.9.0.9.nupkg.sha512",
+    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.extensions.options\\9.0.9\\microsoft.extensions.options.9.0.9.nupkg.sha512",
+    "C:\\Users\\Yugoa\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.9\\microsoft.extensions.primitives.9.0.9.nupkg.sha512",
+    "C:\\Users\\Yugoa\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.9\\system.diagnostics.diagnosticsource.9.0.9.nupkg.sha512"
   ],
   "logs": []
 }

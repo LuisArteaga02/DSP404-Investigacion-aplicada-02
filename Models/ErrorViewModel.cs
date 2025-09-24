@@ -1,3 +1,5 @@
+
+
 namespace DesafioPractico02.Models
 {
     public class ErrorViewModel
