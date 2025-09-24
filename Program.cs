@@ -1,9 +1,23 @@
+using InvestigacionAplicada02.Data;
+
+using Microsoft.EntityFrameworkCore;
+
+using InvestigacionAplicada02.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AzureBibliotecaConnection")));
+
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
