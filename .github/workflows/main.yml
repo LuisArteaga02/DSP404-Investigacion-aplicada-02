@@ -23,6 +23,11 @@ jobs:
         dotnet build -c Release --no-restore
         dotnet publish -c Release -o published --no-build
 
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
     - name: Deploy to Azure App Service
       uses: azure/webapps-deploy@v2
       with:
@@ -31,19 +36,6 @@ jobs:
         package: published
 
     - name: Configure Application Settings
-      uses: azure/appservice-settings@v1
-      with:
-        app-name: 'BibliotecaWeb'
-        app-settings-json: |
-          [
-            {
-              "name": "ConnectionStrings__DefaultConnection",
-              "value": "${{ secrets.DB_CONNECTION_STRING }}",
-              "slotSetting": false
-            },
-            {
-              "name": "ASPNETCORE_ENVIRONMENT",
-              "value": "Production",
-              "slotSetting": false
-            }
-          ]
+      run: |
+        az webapp config appsettings set --name BibliotecaWeb --resource-group Biblioteca --settings ASPNETCORE_ENVIRONMENT=Production
+        az webapp config connection-string set --name BibliotecaWeb --resource-group Biblioteca --connection-string-type SQLAzure --settings DefaultConnection="${{ secrets.DB_CONNECTION_STRING }}"
