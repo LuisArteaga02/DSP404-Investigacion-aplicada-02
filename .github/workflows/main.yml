@@ -34,7 +34,7 @@ jobs:
       uses: azure/appservice-settings@v1
       with:
         app-name: 'BibliotecaWeb'
-        app-settings: |
+        app-settings-json: |
           [
             {
               "name": "ConnectionStrings__DefaultConnection",
