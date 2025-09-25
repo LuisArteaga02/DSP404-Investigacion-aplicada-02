@@ -1,6 +1,7 @@
 ﻿using InvestigacionAplicada02.Models;
 using InvestigacionAplicada02.Models;
 namespace InvestigacionAplicada02.Services
+
 {
     public interface IUsuarioService
     {
@@ -9,6 +10,6 @@ namespace InvestigacionAplicada02.Services
         Task<Usuario> ObtenerUsuarioPorEmailAsync(string email);
         Task<bool> EmailExisteAsync(string email);
 
-        Task<bool> ActualizarPasswordsHash();
+   
     }
 }

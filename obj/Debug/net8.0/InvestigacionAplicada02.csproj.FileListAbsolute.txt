@@ -149,3 +149,4 @@ C:\Users\Yugoa\OneDrive\Documentos\DSP404-Investigacion-aplicada-02\obj\Debug\ne
 C:\Users\Yugoa\OneDrive\Documentos\DSP404-Investigacion-aplicada-02\obj\Debug\net8.0\InvestigacionAplicada02.pdb
 C:\Users\Yugoa\OneDrive\Documentos\DSP404-Investigacion-aplicada-02\obj\Debug\net8.0\InvestigacionAplicada02.genruntimeconfig.cache
 C:\Users\Yugoa\OneDrive\Documentos\DSP404-Investigacion-aplicada-02\obj\Debug\net8.0\ref\InvestigacionAplicada02.dll
+C:\Users\Yugoa\OneDrive\Documentos\DSP404-Investigacion-aplicada-02\bin\Debug\net8.0\BCrypt.Net-Next.dll

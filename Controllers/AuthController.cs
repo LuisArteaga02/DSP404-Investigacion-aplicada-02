@@ -15,17 +15,12 @@ namespace InvestigacionAplicada02.Controllers
             _usuarioService = usuarioService;
         }
 
+        
         [HttpGet]
-        public async Task<IActionResult> FixPasswords()
-        {
-            var resultado = await _usuarioService.ActualizarPasswordsHash();
-            return Content($"Passwords actualizados: {resultado}");
-        }
-        [HttpGet]
-        public IActionResult Login()
-        {
-            return View();
-        }
+    public IActionResult Login()
+    {
+        return View();
+    }
 
         // Los métodos Login y Logout permanecen igual...
         [HttpPost]
