@@ -7,8 +7,7 @@
 <h2>Materiales de la Biblioteca</h2>
 
 <div class="mb-3">
-    <a asp-action="AgregarLibro" class="btn btn-primary">Crear Nuevo Libro</a>
-    <a asp-action="CrearRevista" class="btn btn-success">Crear Nueva Revista</a>
+  
 </div>
 
 <table class="table table-striped">
@@ -16,8 +15,8 @@
         <tr>
             <th>Título</th>
             <th>Tipo</th>
-            <th>Autor/Editorial</th>
-            <th>Acciones</th>
+            <th>Autor/Edicion</th>
+            
         </tr>
     </thead>
     <tbody>
@@ -30,9 +29,9 @@
                     {
                         <span class="badge bg-primary">Libro</span>
                     }
-                    else if (material.GetType().Name == "Revista")
+                    else if (material.GetType().Name == "revista")
                     {
-                        <span class="badge bg-success">Revista</span>
+                        <span class="badge bg-primary">Revista</span>
                     }
                 </td>
                 <td>
@@ -40,16 +39,14 @@
                     {
                         @material.Autor
                     }
-                    else if (material.GetType().Name == "Revista")
+                    else if (material.GetType().Name == "revista")
                     {
-                        @material.Editorial
+                        @material.Edicion
                     }
                 </td>
                 
                 <td>
-                    <a href="#" class="btn btn-sm btn-info">Detalles</a>
-                    <a href="#" class="btn btn-sm btn-warning">Editar</a>
-                    <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                    
                 </td>
             </tr>
         }

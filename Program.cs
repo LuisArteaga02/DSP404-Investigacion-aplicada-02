@@ -15,7 +15,6 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
-// ✅ CONFIGURACIÓN PARA AZURE SQL DATABASE
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
@@ -23,7 +22,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 var app = builder.Build();
 
 
-// Pipeline básico
+
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -45,7 +44,7 @@ try
     var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
     var canConnect = await context.Database.CanConnectAsync();
-    Console.WriteLine(canConnect ? "✅ Conectado a tablas existentes" : "❌ Error de conexión");
+    Console.WriteLine(canConnect ? " Conectado a tablas existentes" : " Error de conexión");
 
     if (canConnect)
     {
