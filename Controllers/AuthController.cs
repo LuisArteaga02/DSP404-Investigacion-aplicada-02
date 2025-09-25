@@ -14,23 +14,68 @@ namespace InvestigacionAplicada02.Controllers
         {
             _usuarioService = usuarioService;
         }
-        [HttpPost]
-        public async Task<IActionResult> Registrar(Usuario usuario, string password, string confirmarPassword)
+
+        [HttpGet]
+        public async Task<IActionResult> FixPasswords()
         {
-            if (ModelState.IsValid)
+            var resultado = await _usuarioService.ActualizarPasswordsHash();
+            return Content($"Passwords actualizados: {resultado}");
+        }
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        // Los métodos Login y Logout permanecen igual...
+        [HttpPost]
+        public async Task<IActionResult> Login(string email, string password)
+        {
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {
-                try
+                ModelState.AddModelError("", "Email y contraseña son requeridos");
+                return View();
+            }
+
+            try
+            {
+                var usuario = await _usuarioService.ValidarLoginAsync(email, password);
+                if (usuario != null)
                 {
-                    // ✅ Usar el método corregido
-                    await _usuarioService.RegistrarUsuarioAsync(usuario, password);
-                    return RedirectToAction("Login");
+                    // ✅ Verificar que la sesión esté disponible
+                    if (HttpContext.Session != null)
+                    {
+                        HttpContext.Session.SetInt32("UsuarioId", usuario.Id);
+                        HttpContext.Session.SetString("UsuarioEmail", usuario.Email);
+                        HttpContext.Session.SetString("UsuarioNombre", usuario.Nombre);
+
+                        // Verificar que se guardaron los valores
+                        Console.WriteLine($"Sesión iniciada - UsuarioId: {HttpContext.Session.GetInt32("UsuarioId")}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("ADVERTENCIA: HttpContext.Session es null");
+                    }
+
+                    return RedirectToAction("Index", "Home");
                 }
-                catch (Exception ex)
+                else
                 {
-                    ModelState.AddModelError("", ex.Message);
+                    ModelState.AddModelError("", "Credenciales inválidas");
                 }
             }
-            return View(usuario);
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", $"Error al iniciar sesión: {ex.Message}");
+            }
+
+            return View();
         }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
         }
+    }
 }

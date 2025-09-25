@@ -1,3 +1,32 @@
-﻿<div>
-	<a href="/Biblioteca/Buscar">Buscar un material por codigo</a>
+﻿@{
+    ViewData["Title"] = "Inicio - Biblioteca";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido a la Biblioteca</h1>
+
+    @if (Context.Session.GetInt32("UsuarioId") != null)
+    {
+        <div class="alert alert-success mt-4">
+            <h4>¡Sesión iniciada correctamente!</h4>
+            <p>Bienvenido, @Context.Session.GetString("UsuarioNombre")</p>
+            <p>Email: @Context.Session.GetString("UsuarioEmail")</p>
+        </div>
+
+        <div class="mt-4">
+            <a asp-controller="Biblioteca" asp-action="Index" class="btn btn-primary me-2">
+                Ver Materiales de Biblioteca
+            </a>
+            <a asp-controller="Auth" asp-action="Logout" class="btn btn-secondary">
+                Cerrar Sesión
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-warning mt-4">
+            <p>No has iniciado sesión</p>
+            <a asp-controller="Auth" asp-action="Login" class="btn btn-primary">Iniciar Sesión</a>
+        </div>
+    }
 </div>

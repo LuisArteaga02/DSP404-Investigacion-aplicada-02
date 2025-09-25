@@ -3,7 +3,9 @@ using InvestigacionAplicada02.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Concurrent;
 using System.Linq;
+using System.Threading.Tasks;
 namespace InvestigacionAplicada02.Controllers
+
 {
     public class BibliotecaController : Controller
     {
@@ -26,7 +28,7 @@ namespace InvestigacionAplicada02.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CrearLibro(Libro libro)
+        public async Task<IActionResult> AgregarLibro(Libro libro)
         {
             if (ModelState.IsValid)
             {
@@ -35,6 +37,7 @@ namespace InvestigacionAplicada02.Controllers
             }
             return View(libro);
         }
+
 
         public IActionResult CrearRevista()
         {

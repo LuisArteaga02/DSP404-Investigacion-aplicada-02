@@ -25,6 +25,8 @@ namespace InvestigacionAplicada02.Models
 
         public DateTime FechaRegistro { get; set; }
 
+
+        [NotMapped]
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Las contraseñas no coinciden")]
         [Display(Name = "Confirmar Contraseña")]

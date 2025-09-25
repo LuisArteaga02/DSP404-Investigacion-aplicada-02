@@ -8,5 +8,7 @@ namespace InvestigacionAplicada02.Services
         Task<Usuario> ValidarLoginAsync(string email, string password);
         Task<Usuario> ObtenerUsuarioPorEmailAsync(string email);
         Task<bool> EmailExisteAsync(string email);
+
+        Task<bool> ActualizarPasswordsHash();
     }
 }

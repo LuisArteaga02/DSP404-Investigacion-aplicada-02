@@ -5,8 +5,15 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<BibliotecaService>();
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Tiempo de expiración
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 // ✅ CONFIGURACIÓN PARA AZURE SQL DATABASE
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -14,6 +21,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
 var app = builder.Build();
+
 
 // Pipeline básico
 if (app.Environment.IsDevelopment())
@@ -24,12 +32,13 @@ if (app.Environment.IsDevelopment())
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
-
+app.UseSession();
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Auth}/{action=Login}/{id?}");
 
-// ✅ Verificación simple de conexión
+
+
 try
 {
     using var scope = app.Services.CreateScope();
