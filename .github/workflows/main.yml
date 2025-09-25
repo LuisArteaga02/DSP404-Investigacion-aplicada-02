@@ -21,16 +21,14 @@ jobs:
       run: |
         dotnet restore
         dotnet build -c Release --no-restore
-        dotnet publish InvestigacionAplicada02.csproj -c Release -o published --self-contained false
+        dotnet publish InvestigacionAplicada02.csproj -c Release -o published
 
     - name: Debug - List Published Files
       run: |
         echo "=== Estructura de archivos publicados ==="
-        find published -type f -name "*.dll" -o -name "*.json" -o -name "*.config" | head -20
-        echo "=== Archivos principales ==="
         ls -la published/
-        echo "=== web.config ==="
-        cat published/web.config 2>/dev/null || echo "No se encontró web.config"
+        echo "=== Contenido de published/ ==="
+        find published -type f | head -20
 
     - name: Deploy to Azure App Service
       uses: azure/webapps-deploy@v2
