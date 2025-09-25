@@ -21,12 +21,16 @@ jobs:
       run: |
         dotnet restore
         dotnet build -c Release --no-restore
-        dotnet publish -c Release -o published --no-build
+        dotnet publish InvestigacionAplicada02.csproj -c Release -o published --self-contained false
 
-    - name: Azure Login
-      uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - name: Debug - List Published Files
+      run: |
+        echo "=== Estructura de archivos publicados ==="
+        find published -type f -name "*.dll" -o -name "*.json" -o -name "*.config" | head -20
+        echo "=== Archivos principales ==="
+        ls -la published/
+        echo "=== web.config ==="
+        cat published/web.config 2>/dev/null || echo "No se encontró web.config"
 
     - name: Deploy to Azure App Service
       uses: azure/webapps-deploy@v2
@@ -34,8 +38,3 @@ jobs:
         app-name: 'BibliotecaWeb'
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: published
-
-    - name: Configure Application Settings
-      run: |
-        az webapp config appsettings set --name BibliotecaWeb --resource-group Biblioteca --settings ASPNETCORE_ENVIRONMENT=Production
-        az webapp config connection-string set --name BibliotecaWeb --resource-group Biblioteca --connection-string-type SQLAzure --settings DefaultConnection="${{ secrets.DB_CONNECTION_STRING }}"
